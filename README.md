@@ -1,6 +1,31 @@
 # RAG 自動化系統
 
-一個基於 RAG（檢索增強生成）分析的項目自動化優化系統，能夠自動分析項目、判斷迭代方向、優化並打包。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![GitHub stars](https://img.shields.io/github/stars/xingxuling/AutoRAGsystem?style=social)](https://github.com/xingxuling/AutoRAGsystem)
+[![GitHub forks](https://img.shields.io/github/forks/xingxuling/AutoRAGsystem?style=social)](https://github.com/xingxuling/AutoRAGsystem)
+
+<div align="center">
+  <h3>🚀 智能项目分析与自动化优化工具</h3>
+  <p>基于 RAG（检索增强生成）技术，自动分析项目结构、智能决策优化方向、一键打包部署</p>
+</div>
+
+## 📸 项目截图
+
+### 主界面
+![主界面](https://via.placeholder.com/800x400?text=AutoRAG+System+Main+Interface)
+
+### 分析报告
+![分析报告](https://via.placeholder.com/800x400?text=Analysis+Report)
+
+### 优化结果
+![优化结果](https://via.placeholder.com/800x400?text=Optimization+Results)
+
+---
+
+## ✨ 项目简介
+
+AutoRAG 系統是一個基於 RAG（檢索增強生成）分析的項目自動化優化系統，能夠自動分析項目、判斷迭代方向、優化並打包。
 
 ## 🚀 功能特點
 
@@ -51,6 +76,17 @@ auto-rag-system/
 - Python 3.8+
 - 無需額外依賴（使用標準庫）
 
+### 一鍵安裝
+
+```bash
+# 克隆倉庫
+git clone https://github.com/xingxuling/AutoRAGsystem.git
+cd AutoRAGsystem
+
+# 運行系統
+python main.py /path/to/your/project
+```
+
 ### 使用方法
 
 #### 方法 1: 使用啟動腳本 (推薦)
@@ -84,6 +120,21 @@ python main.py /path/to/your/project
 
 # 或使用 python3
 python3 main.py /path/to/your/project
+```
+
+### 使用示例
+
+```bash
+# 分析 React Native 項目
+python main.py ~/projects/my-react-app
+
+# 分析 Web 項目
+python main.py ~/projects/website
+
+# 批量處理多個項目
+for dir in projects/*/; do
+  python main.py "$dir"
+done
 ```
 
 ## 📊 工作流程
