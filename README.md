@@ -41,6 +41,13 @@ AutoRAG 系統是一個基於 RAG（檢索增強生成）分析的項目自動�
 - 實施計劃生成
 - 風險評估
 
+### 2.5. **結構化預測引擎 (Aether Track Engine)** ⭐ 新功能
+- DTFM 雙軌時間線分析（事件線 + 結構線）
+- QSDM 行動動力學分析（八門 + 十二長生 + 九星）
+- 邊緣信號檢測（系統狀態變化、注意力轉移等）
+- 行動許可授權（HOLD / INTERNAL_PREP / EXECUTE_SHADOW / EXECUTE_VISIBLE）
+- Aether 腳本自動生成
+
 ### 3. **自動化優化**
 - 項目結構優化
 - 配置文件更新
@@ -60,7 +67,9 @@ auto-rag-system/
 ├── modules/              # 核心模塊
 │   ├── rag_analyzer.py   # RAG 分析模塊
 │   ├── decision_engine.py # 判斷引擎
-│   └── auto_packager.py  # 自動化打包
+│   ├── auto_packager.py  # 自動化打包
+│   ├── aether_track_engine.py  # Aether 預測引擎 ⭐
+│   └── aether_integration.py # Aether 集成接口 ⭐
 ├── config/               # 配置文件
 ├── output/               # 輸出結果
 ├── logs/                 # 執行日誌
@@ -69,6 +78,18 @@ auto-rag-system/
 ├── run_system.bat       # Windows 啟動腳本
 └── README.md           # 本文檔
 ```
+
+## 🛠️ 技術棧
+
+### 核心技術
+- Python 3.8+
+- 標準庫（無外部依賴）
+
+### 新增：Aether Track Engine
+- DTFM 時間分解算法
+- QSDM 行動動力學模型
+- 邊緣信號檢測引擎
+- Aether 語言編譯器
 
 ## 🛠️ 快速開始
 
