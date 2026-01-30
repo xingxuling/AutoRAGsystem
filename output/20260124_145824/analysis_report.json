@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "path": "/tmp/workflow_example_project",
+    "name": "workflow_example_project",
+    "analysis_timestamp": "2026-01-24 14:58:24"
+  },
+  "structure_analysis": {
+    "total_files": 4,
+    "file_types": {
+      ".py": 2,
+      ".json": 1,
+      ".txt": 1
+    },
+    "directories": [],
+    "missing_files": [
+      "package.json",
+      "README.md",
+      "src/",
+      "android/",
+      "ios/",
+      ".github/workflows/"
+    ],
+    "project_size": 10121,
+    "project_size_mb": 0.009652137756347656
+  },
+  "code_quality_analysis": {
+    "typescript_files": 0,
+    "react_components": 0,
+    "has_tests": true,
+    "has_linting": false,
+    "has_build_scripts": false,
+    "code_complexity": "low",
+    "issues_found": []
+  },
+  "feature_analysis": {
+    "permission_types": [],
+    "has_permission_service": false,
+    "has_ui_components": false,
+    "has_automation": false,
+    "missing_features": [
+      "權限狀態持久化",
+      "權限使用統計",
+      "批量權限管理",
+      "權限教育界面",
+      "自動化測試"
+    ]
+  },
+  "automation_analysis": {
+    "has_github_actions": false,
+    "has_build_scripts": false,
+    "has_deployment": false,
+    "ci_cd_maturity": "basic",
+    "improvement_opportunities": [
+      "添加 GitHub Actions 自動化",
+      "添加自動部署配置",
+      "增強 CI/CD 流程"
+    ]
+  },
+  "overall_assessment": {
+    "completeness_score": 10.0,
+    "quality_score": 50,
+    "automation_score": 0,
+    "overall_score": 19.0,
+    "maturity_level": "beginner",
+    "readiness_for_production": false
+  },
+  "recommendations": [
+    {
+      "category": "structure",
+      "priority": "high",
+      "description": "添加缺失的文件/目錄: package.json, README.md, src/",
+      "impact": "提高項目完整性"
+    },
+    {
+      "category": "code_quality",
+      "priority": "medium",
+      "description": "添加 ESLint 和 Prettier 配置",
+      "impact": "統一代碼風格，減少錯誤"
+    },
+    {
+      "category": "features",
+      "priority": "medium",
+      "description": "擴展支持的權限類型",
+      "impact": "增強應用功能"
+    },
+    {
+      "category": "automation",
+      "priority": "medium",
+      "description": "添加 GitHub Actions 自動化",
+      "impact": "提高開發效率"
+    },
+    {
+      "category": "automation",
+      "priority": "medium",
+      "description": "添加自動部署配置",
+      "impact": "提高開發效率"
+    },
+    {
+      "category": "overall",
+      "priority": "high",
+      "description": "進行全面的項目重構和優化",
+      "impact": "提升項目整體質量"
+    }
+  ]
+}

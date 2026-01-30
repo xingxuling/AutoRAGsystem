@@ -1,0 +1,27 @@
+{
+  "project": "test_project",
+  "timestamp": "20260124_043839",
+  "knowledge": {
+    "patterns": [],
+    "best_practices": [],
+    "code_smells": [],
+    "components": [],
+    "structure": {
+      "dirs_present": [],
+      "missing_dirs": [
+        "src/components",
+        "src/screens",
+        "src/utils",
+        "src/hooks",
+        "tests",
+        "docs"
+      ],
+      "file_types": {
+        ".json": 2,
+        ".py": 1,
+        ".md": 1
+      }
+    }
+  },
+  "health_score": 50
+}

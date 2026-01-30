@@ -1,0 +1,18 @@
+{
+  "processing_summary": {
+    "data_cleaned": true,
+    "report_path": "/tmp/workflow_example_project/processing_report.json"
+  },
+  "quality_metrics": {
+    "overall_score": 0,
+    "recommendations": [
+      "代碼質量較低，建議進行代碼審查和重構"
+    ]
+  },
+  "optimizations": [],
+  "validation": {
+    "is_valid": true,
+    "issues_found": [],
+    "success_rate": 0.0
+  }
+}

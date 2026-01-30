@@ -1,0 +1,292 @@
+{
+  "project_info": {
+    "path": "test-project",
+    "name": "test-project"
+  },
+  "goal_analysis": {
+    "improve_performance": {
+      "definition": {
+        "name": "提高性能",
+        "description": "優化應用程序性能",
+        "metrics": [
+          "加載時間",
+          "FPS",
+          "內存使用"
+        ],
+        "strategies": [
+          "代碼分割",
+          "圖片優化",
+          "緩存策略"
+        ],
+        "priority": "high",
+        "success_criteria": [
+          "加載時間減少30%",
+          "FPS穩定在60"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "improve_performance",
+          "strategy": "代碼分割",
+          "priority": "medium",
+          "description": "實施代碼分割以達成提高性能目標"
+        },
+        {
+          "goal": "improve_performance",
+          "strategy": "圖片優化",
+          "priority": "medium",
+          "description": "實施圖片優化以達成提高性能目標"
+        },
+        {
+          "goal": "improve_performance",
+          "strategy": "緩存策略",
+          "priority": "medium",
+          "description": "實施緩存策略以達成提高性能目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "improve_performance",
+        "goal_name": "提高性能",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施代碼分割",
+            "description": "第1階段: 代碼分割",
+            "tasks": [
+              "研究代碼分割最佳實踐",
+              "設計代碼分割實施方案",
+              "實施代碼分割",
+              "測試代碼分割效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "代碼分割實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施圖片優化",
+            "description": "第2階段: 圖片優化",
+            "tasks": [
+              "研究圖片優化最佳實踐",
+              "設計圖片優化實施方案",
+              "實施圖片優化",
+              "測試圖片優化效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "圖片優化實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "加載時間減少30%",
+          "FPS穩定在60"
+        ]
+      },
+      "priority": "high"
+    },
+    "optimize_user_experience": {
+      "definition": {
+        "name": "優化用戶體驗",
+        "description": "改善用戶界面和交互體驗",
+        "metrics": [
+          "用戶滿意度",
+          "錯誤率"
+        ],
+        "strategies": [
+          "UI改進",
+          "錯誤處理",
+          "加載優化"
+        ],
+        "priority": "medium",
+        "success_criteria": [
+          "用戶滿意度>4/5",
+          "錯誤率<1%"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "optimize_user_experience",
+          "strategy": "UI改進",
+          "priority": "medium",
+          "description": "實施UI改進以達成優化用戶體驗目標"
+        },
+        {
+          "goal": "optimize_user_experience",
+          "strategy": "錯誤處理",
+          "priority": "medium",
+          "description": "實施錯誤處理以達成優化用戶體驗目標"
+        },
+        {
+          "goal": "optimize_user_experience",
+          "strategy": "加載優化",
+          "priority": "medium",
+          "description": "實施加載優化以達成優化用戶體驗目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "optimize_user_experience",
+        "goal_name": "優化用戶體驗",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施UI改進",
+            "description": "第1階段: UI改進",
+            "tasks": [
+              "研究UI改進最佳實踐",
+              "設計UI改進實施方案",
+              "實施UI改進",
+              "測試UI改進效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "UI改進實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施錯誤處理",
+            "description": "第2階段: 錯誤處理",
+            "tasks": [
+              "研究錯誤處理最佳實踐",
+              "設計錯誤處理實施方案",
+              "實施錯誤處理",
+              "測試錯誤處理效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "錯誤處理實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "用戶滿意度>4/5",
+          "錯誤率<1%"
+        ]
+      },
+      "priority": "medium"
+    },
+    "enhance_security": {
+      "definition": {
+        "name": "增強安全性",
+        "description": "提高應用程序安全性",
+        "metrics": [
+          "安全漏洞數",
+          "依賴漏洞"
+        ],
+        "strategies": [
+          "輸入驗證",
+          "認證加固",
+          "依賴更新"
+        ],
+        "priority": "high",
+        "success_criteria": [
+          "零高危漏洞",
+          "所有依賴更新"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "enhance_security",
+          "strategy": "輸入驗證",
+          "priority": "medium",
+          "description": "實施輸入驗證以達成增強安全性目標"
+        },
+        {
+          "goal": "enhance_security",
+          "strategy": "認證加固",
+          "priority": "medium",
+          "description": "實施認證加固以達成增強安全性目標"
+        },
+        {
+          "goal": "enhance_security",
+          "strategy": "依賴更新",
+          "priority": "medium",
+          "description": "實施依賴更新以達成增強安全性目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "enhance_security",
+        "goal_name": "增強安全性",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施輸入驗證",
+            "description": "第1階段: 輸入驗證",
+            "tasks": [
+              "研究輸入驗證最佳實踐",
+              "設計輸入驗證實施方案",
+              "實施輸入驗證",
+              "測試輸入驗證效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "輸入驗證實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施認證加固",
+            "description": "第2階段: 認證加固",
+            "tasks": [
+              "研究認證加固最佳實踐",
+              "設計認證加固實施方案",
+              "實施認證加固",
+              "測試認證加固效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "認證加固實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "零高危漏洞",
+          "所有依賴更新"
+        ]
+      },
+      "priority": "high"
+    }
+  },
+  "summary": {
+    "total_goals": 3,
+    "high_priority_goals": 2,
+    "average_relevance": 50.0,
+    "recommended_focus": [
+      "提高性能",
+      "增強安全性",
+      "優化用戶體驗"
+    ]
+  }
+}

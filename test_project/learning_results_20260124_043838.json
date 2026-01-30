@@ -1,0 +1,55 @@
+{
+  "timestamp": "20260124_043838",
+  "project_path": "test_project",
+  "learning_data": {
+    "project_insights": {},
+    "patterns_discovered": [],
+    "best_practices": [],
+    "issues_detected": [],
+    "improvements_applied": [],
+    "learning_history": []
+  },
+  "results": {
+    "phase_results": {
+      "assessment": {
+        "project_type": "unknown",
+        "tech_stack": [],
+        "maturity_level": "initial",
+        "critical_issues": [],
+        "strengths": [
+          "有文檔"
+        ],
+        "weaknesses": [
+          "缺少代碼檢查配置",
+          "缺少代碼格式化配置",
+          "缺少文檔目錄"
+        ]
+      },
+      "patterns_learned": 0,
+      "improvements_applied": {
+        "planned": [],
+        "successful": [],
+        "failed": [],
+        "skipped": []
+      },
+      "fixes_applied": {
+        "fixed": [],
+        "failed": [],
+        "skipped": []
+      },
+      "validation": {
+        "health_score": 60,
+        "success_rate": 0,
+        "learned_lessons": [],
+        "recommendations": [
+          "項目有改進空間，建議逐步優化",
+          "添加自動化測試",
+          "完善文檔和配置"
+        ]
+      }
+    },
+    "total_improvements": 0,
+    "success_rate": 0,
+    "project_health": 60
+  }
+}

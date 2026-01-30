@@ -1,0 +1,321 @@
+{
+  "system_info": {
+    "name": "增強版 RAG 自動化系統（集成新模塊）",
+    "version": "1.0.0",
+    "execution_time": "20260124_040210",
+    "project_path": "../hardware-update-project"
+  },
+  "project_info": {
+    "name": "hardware-update-project",
+    "path": "../hardware-update-project",
+    "overall_score": 13.5,
+    "maturity_level": "beginner"
+  },
+  "domain_analysis": {
+    "detected_domains": [],
+    "primary_domain": null,
+    "domain_confidence": 0,
+    "key_insights": []
+  },
+  "goal_analysis": {
+    "active_goals": [
+      "improve_performance",
+      "enhance_security",
+      "improve_code_quality"
+    ],
+    "goal_details": {
+      "improve_performance": {
+        "definition": {
+          "name": "提高性能",
+          "description": "優化應用程序性能",
+          "metrics": [
+            "加載時間",
+            "FPS",
+            "內存使用"
+          ],
+          "strategies": [
+            "代碼分割",
+            "圖片優化",
+            "緩存策略"
+          ],
+          "priority": "high",
+          "success_criteria": [
+            "加載時間減少30%",
+            "FPS穩定在60"
+          ]
+        },
+        "relevance_score": 50,
+        "relevance_analysis": [
+          "未發現明顯相關問題，但目標仍然相關"
+        ],
+        "recommendations": [
+          {
+            "goal": "improve_performance",
+            "strategy": "代碼分割",
+            "priority": "medium",
+            "description": "實施代碼分割以達成提高性能目標"
+          },
+          {
+            "goal": "improve_performance",
+            "strategy": "圖片優化",
+            "priority": "medium",
+            "description": "實施圖片優化以達成提高性能目標"
+          },
+          {
+            "goal": "improve_performance",
+            "strategy": "緩存策略",
+            "priority": "medium",
+            "description": "實施緩存策略以達成提高性能目標"
+          }
+        ],
+        "implementation_plan": {
+          "goal": "improve_performance",
+          "goal_name": "提高性能",
+          "phases": [
+            {
+              "phase_number": 1,
+              "name": "實施代碼分割",
+              "description": "第1階段: 代碼分割",
+              "tasks": [
+                "研究代碼分割最佳實踐",
+                "設計代碼分割實施方案",
+                "實施代碼分割",
+                "測試代碼分割效果"
+              ],
+              "duration_weeks": 1,
+              "deliverables": [
+                "代碼分割實施完成",
+                "相關測試通過"
+              ]
+            },
+            {
+              "phase_number": 2,
+              "name": "實施圖片優化",
+              "description": "第2階段: 圖片優化",
+              "tasks": [
+                "研究圖片優化最佳實踐",
+                "設計圖片優化實施方案",
+                "實施圖片優化",
+                "測試圖片優化效果"
+              ],
+              "duration_weeks": 1,
+              "deliverables": [
+                "圖片優化實施完成",
+                "相關測試通過"
+              ]
+            }
+          ],
+          "timeline": {
+            "estimated_total_weeks": 2,
+            "start_date": "2026-01-24"
+          },
+          "success_criteria": [
+            "加載時間減少30%",
+            "FPS穩定在60"
+          ]
+        },
+        "priority": "high"
+      },
+      "enhance_security": {
+        "definition": {
+          "name": "增強安全性",
+          "description": "提高應用程序安全性",
+          "metrics": [
+            "安全漏洞數",
+            "依賴漏洞"
+          ],
+          "strategies": [
+            "輸入驗證",
+            "認證加固",
+            "依賴更新"
+          ],
+          "priority": "high",
+          "success_criteria": [
+            "零高危漏洞",
+            "所有依賴更新"
+          ]
+        },
+        "relevance_score": 50,
+        "relevance_analysis": [
+          "未發現明顯相關問題，但目標仍然相關"
+        ],
+        "recommendations": [
+          {
+            "goal": "enhance_security",
+            "strategy": "輸入驗證",
+            "priority": "medium",
+            "description": "實施輸入驗證以達成增強安全性目標"
+          },
+          {
+            "goal": "enhance_security",
+            "strategy": "認證加固",
+            "priority": "medium",
+            "description": "實施認證加固以達成增強安全性目標"
+          },
+          {
+            "goal": "enhance_security",
+            "strategy": "依賴更新",
+            "priority": "medium",
+            "description": "實施依賴更新以達成增強安全性目標"
+          }
+        ],
+        "implementation_plan": {
+          "goal": "enhance_security",
+          "goal_name": "增強安全性",
+          "phases": [
+            {
+              "phase_number": 1,
+              "name": "實施輸入驗證",
+              "description": "第1階段: 輸入驗證",
+              "tasks": [
+                "研究輸入驗證最佳實踐",
+                "設計輸入驗證實施方案",
+                "實施輸入驗證",
+                "測試輸入驗證效果"
+              ],
+              "duration_weeks": 1,
+              "deliverables": [
+                "輸入驗證實施完成",
+                "相關測試通過"
+              ]
+            },
+            {
+              "phase_number": 2,
+              "name": "實施認證加固",
+              "description": "第2階段: 認證加固",
+              "tasks": [
+                "研究認證加固最佳實踐",
+                "設計認證加固實施方案",
+                "實施認證加固",
+                "測試認證加固效果"
+              ],
+              "duration_weeks": 1,
+              "deliverables": [
+                "認證加固實施完成",
+                "相關測試通過"
+              ]
+            }
+          ],
+          "timeline": {
+            "estimated_total_weeks": 2,
+            "start_date": "2026-01-24"
+          },
+          "success_criteria": [
+            "零高危漏洞",
+            "所有依賴更新"
+          ]
+        },
+        "priority": "high"
+      },
+      "improve_code_quality": {
+        "definition": {
+          "name": "改善代碼質量",
+          "description": "提高代碼可讀性和可維護性",
+          "metrics": [
+            "代碼覆蓋率",
+            "圈複雜度"
+          ],
+          "strategies": [
+            "代碼重構",
+            "單元測試",
+            "文檔生成"
+          ],
+          "priority": "medium",
+          "success_criteria": [
+            "代碼覆蓋率>80%",
+            "圈複雜度<10"
+          ]
+        },
+        "relevance_score": 50,
+        "relevance_analysis": [
+          "未發現明顯相關問題，但目標仍然相關"
+        ],
+        "recommendations": [
+          {
+            "goal": "improve_code_quality",
+            "strategy": "代碼重構",
+            "priority": "medium",
+            "description": "實施代碼重構以達成改善代碼質量目標"
+          },
+          {
+            "goal": "improve_code_quality",
+            "strategy": "單元測試",
+            "priority": "medium",
+            "description": "實施單元測試以達成改善代碼質量目標"
+          },
+          {
+            "goal": "improve_code_quality",
+            "strategy": "文檔生成",
+            "priority": "medium",
+            "description": "實施文檔生成以達成改善代碼質量目標"
+          }
+        ],
+        "implementation_plan": {
+          "goal": "improve_code_quality",
+          "goal_name": "改善代碼質量",
+          "phases": [
+            {
+              "phase_number": 1,
+              "name": "實施代碼重構",
+              "description": "第1階段: 代碼重構",
+              "tasks": [
+                "研究代碼重構最佳實踐",
+                "設計代碼重構實施方案",
+                "實施代碼重構",
+                "測試代碼重構效果"
+              ],
+              "duration_weeks": 1,
+              "deliverables": [
+                "代碼重構實施完成",
+                "相關測試通過"
+              ]
+            },
+            {
+              "phase_number": 2,
+              "name": "實施單元測試",
+              "description": "第2階段: 單元測試",
+              "tasks": [
+                "研究單元測試最佳實踐",
+                "設計單元測試實施方案",
+                "實施單元測試",
+                "測試單元測試效果"
+              ],
+              "duration_weeks": 1,
+              "deliverables": [
+                "單元測試實施完成",
+                "相關測試通過"
+              ]
+            }
+          ],
+          "timeline": {
+            "estimated_total_weeks": 2,
+            "start_date": "2026-01-24"
+          },
+          "success_criteria": [
+            "代碼覆蓋率>80%",
+            "圈複雜度<10"
+          ]
+        },
+        "priority": "medium"
+      }
+    },
+    "recommended_focus": [
+      "提高性能",
+      "增強安全性",
+      "改善代碼質量"
+    ]
+  },
+  "integration_insights": [
+    "基於目標分析，推薦優先處理: 提高性能, 增強安全性, 改善代碼質量"
+  ],
+  "optimization_recommendations": [
+    "優先處理提高性能相關優化",
+    "優先處理增強安全性相關優化"
+  ],
+  "next_steps": [
+    "1. 查看詳細分析報告了解具體問題",
+    "2. 根據領域特徵實施針對性優化",
+    "3. 按照目標優先級制定實施計劃",
+    "4. 監控優化效果並持續改進"
+  ]
+}

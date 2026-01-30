@@ -1,0 +1,25 @@
+{
+  "project_info": {
+    "path": "../hardware-update-project",
+    "name": "hardware-update-project"
+  },
+  "domain_analysis": {
+    "detected_domains": [],
+    "primary_domain": null,
+    "domain_confidence": 0,
+    "matched_patterns": {}
+  },
+  "insights": {
+    "domain_specific_insights": [],
+    "total_insights": 0
+  },
+  "recommendations": {
+    "domain_specific_recommendations": [],
+    "total_recommendations": 0
+  },
+  "summary": {
+    "has_domain_context": false,
+    "recommended_optimization_focus": [],
+    "next_steps": []
+  }
+}

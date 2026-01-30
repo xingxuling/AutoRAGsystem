@@ -1,0 +1,54 @@
+{
+  "system_info": {
+    "name": "增強版 RAG 自動化系統",
+    "version": "2.0.0",
+    "execution_time": "2026-01-24T14:58:24.983162",
+    "execution_id": "20260124_145824",
+    "total_phases": 6
+  },
+  "project_info": {
+    "path": "/tmp/workflow_example_project",
+    "name": "workflow_example_project"
+  },
+  "phase_results": {
+    "analysis": {
+      "completed": true,
+      "score": 19.0,
+      "maturity_level": "beginner"
+    },
+    "processing": {
+      "completed": true,
+      "quality_score": 0,
+      "is_valid": true
+    },
+    "learning": {
+      "completed": true,
+      "total_improvements": 0,
+      "project_health": 65
+    },
+    "decision": {
+      "completed": true,
+      "should_proceed": false,
+      "iteration_theme": "建立堅實基礎"
+    },
+    "packaging": {
+      "completed": false,
+      "package_path": null
+    }
+  },
+  "summary": {
+    "status": "stopped",
+    "total_improvements": 0,
+    "overall_health": 28.0,
+    "key_insights": [
+      "項目基礎薄弱，需要重大改進",
+      "綜合評估建議暫停當前迭代"
+    ],
+    "next_steps": [
+      "1. 查看增強版分析報告了解項目問題",
+      "2. 根據學習結果修復關鍵問題",
+      "3. 重新運行數據處理和學習模塊",
+      "4. 解決問題後重新運行增強版系統"
+    ]
+  }
+}

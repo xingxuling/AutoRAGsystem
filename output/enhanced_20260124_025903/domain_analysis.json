@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "path": "test-project",
+    "name": "test-project"
+  },
+  "domain_analysis": {
+    "detected_domains": [
+      "web_application"
+    ],
+    "primary_domain": "web_application",
+    "domain_confidence": 75,
+    "matched_patterns": {
+      "web_application": {
+        "score": 3,
+        "matched_patterns": [
+          {
+            "type": "frontend",
+            "pattern": "package.json"
+          },
+          {
+            "type": "frontend",
+            "pattern": "src/"
+          },
+          {
+            "type": "frontend",
+            "pattern": "public/"
+          }
+        ],
+        "confidence": 75
+      }
+    }
+  },
+  "insights": {
+    "domain_specific_insights": [
+      "檢測到Web應用程序框架，建議實施組件化架構"
+    ],
+    "total_insights": 1
+  },
+  "recommendations": {
+    "domain_specific_recommendations": [
+      {
+        "domain": "web_application",
+        "practice": "響應式設計",
+        "priority": "medium",
+        "description": "實施響應式設計最佳實踐",
+        "implementation_hint": "使用CSS媒體查詢和flexbox/grid布局"
+      },
+      {
+        "domain": "web_application",
+        "practice": "RESTful API設計",
+        "priority": "medium",
+        "description": "實施RESTful API設計最佳實踐",
+        "implementation_hint": "遵循REST原則，使用適當的HTTP方法"
+      },
+      {
+        "domain": "web_application",
+        "practice": "狀態管理",
+        "priority": "medium",
+        "description": "實施狀態管理最佳實踐",
+        "implementation_hint": "考慮使用Redux、Context API或MobX"
+      },
+      {
+        "domain": "web_application",
+        "practice": "組件化架構",
+        "priority": "medium",
+        "description": "實施組件化架構最佳實踐",
+        "implementation_hint": "創建可重用的組件，遵循單一職責原則"
+      },
+      {
+        "domain": "web_application",
+        "practice": "性能優化",
+        "priority": "medium",
+        "description": "實施性能優化最佳實踐",
+        "implementation_hint": "參考相關領域最佳實踐文檔"
+      },
+      {
+        "domain": "web_application",
+        "focus": "性能",
+        "priority": "high",
+        "description": "優化web_application的性能",
+        "implementation_hint": "實施代碼分割、懶加載、圖片優化"
+      },
+      {
+        "domain": "web_application",
+        "focus": "安全性",
+        "priority": "high",
+        "description": "優化web_application的安全性",
+        "implementation_hint": "實施CSP、XSS防護、CSRF令牌"
+      },
+      {
+        "domain": "web_application",
+        "focus": "用戶體驗",
+        "priority": "high",
+        "description": "優化web_application的用戶體驗",
+        "implementation_hint": "優化加載時間、添加加載狀態、錯誤處理"
+      },
+      {
+        "domain": "web_application",
+        "focus": "可維護性",
+        "priority": "high",
+        "description": "優化web_application的可維護性",
+        "implementation_hint": "實施類型檢查、代碼格式化、文檔生成"
+      }
+    ],
+    "total_recommendations": 9
+  },
+  "summary": {
+    "has_domain_context": true,
+    "recommended_optimization_focus": [
+      "性能",
+      "可維護性",
+      "安全性",
+      "用戶體驗"
+    ],
+    "next_steps": [
+      "1. 專注於Web應用程序的最佳實踐",
+      "2. 優先實施web_application領域的關鍵優化",
+      "3. 參考web_application領域的特定模式和架構",
+      "4. 監控web_application相關的關鍵指標"
+    ]
+  }
+}

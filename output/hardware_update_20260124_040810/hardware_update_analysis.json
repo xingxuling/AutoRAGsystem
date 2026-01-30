@@ -1,0 +1,388 @@
+{
+  "project_info": {
+    "path": "/mnt/c/Users/User/hardware-update-project",
+    "name": "hardware-update-project"
+  },
+  "goal_analysis": {
+    "update_drivers": {
+      "definition": {
+        "name": "更新驅動程式",
+        "description": "更新系統硬體驅動程式到最新版本",
+        "metrics": [
+          "驅動程式版本",
+          "驅動程式相容性",
+          "系統穩定性"
+        ],
+        "strategies": [
+          "檢查Windows Update",
+          "訪問硬體製造商網站",
+          "使用驅動程式更新工具"
+        ],
+        "priority": "high",
+        "success_criteria": [
+          "所有驅動程式更新到最新穩定版",
+          "系統無驅動程式衝突"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "update_drivers",
+          "strategy": "檢查Windows Update",
+          "priority": "medium",
+          "description": "實施檢查Windows Update以達成更新驅動程式目標"
+        },
+        {
+          "goal": "update_drivers",
+          "strategy": "訪問硬體製造商網站",
+          "priority": "medium",
+          "description": "實施訪問硬體製造商網站以達成更新驅動程式目標"
+        },
+        {
+          "goal": "update_drivers",
+          "strategy": "使用驅動程式更新工具",
+          "priority": "medium",
+          "description": "實施使用驅動程式更新工具以達成更新驅動程式目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "update_drivers",
+        "goal_name": "更新驅動程式",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施檢查Windows Update",
+            "description": "第1階段: 檢查Windows Update",
+            "tasks": [
+              "研究檢查Windows Update最佳實踐",
+              "設計檢查Windows Update實施方案",
+              "實施檢查Windows Update",
+              "測試檢查Windows Update效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "檢查Windows Update實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施訪問硬體製造商網站",
+            "description": "第2階段: 訪問硬體製造商網站",
+            "tasks": [
+              "研究訪問硬體製造商網站最佳實踐",
+              "設計訪問硬體製造商網站實施方案",
+              "實施訪問硬體製造商網站",
+              "測試訪問硬體製造商網站效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "訪問硬體製造商網站實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "所有驅動程式更新到最新穩定版",
+          "系統無驅動程式衝突"
+        ]
+      },
+      "priority": "high"
+    },
+    "optimize_performance": {
+      "definition": {
+        "name": "優化系統效能",
+        "description": "透過驅動程式和設定優化系統效能",
+        "metrics": [
+          "CPU使用率",
+          "記憶體使用率",
+          "溫度控制"
+        ],
+        "strategies": [
+          "安裝最新顯示卡驅動程式",
+          "更新晶片組驅動程式",
+          "優化電源管理設定"
+        ],
+        "priority": "high",
+        "success_criteria": [
+          "系統響應速度提升",
+          "溫度控制在安全範圍"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "optimize_performance",
+          "strategy": "安裝最新顯示卡驅動程式",
+          "priority": "medium",
+          "description": "實施安裝最新顯示卡驅動程式以達成優化系統效能目標"
+        },
+        {
+          "goal": "optimize_performance",
+          "strategy": "更新晶片組驅動程式",
+          "priority": "medium",
+          "description": "實施更新晶片組驅動程式以達成優化系統效能目標"
+        },
+        {
+          "goal": "optimize_performance",
+          "strategy": "優化電源管理設定",
+          "priority": "medium",
+          "description": "實施優化電源管理設定以達成優化系統效能目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "optimize_performance",
+        "goal_name": "優化系統效能",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施安裝最新顯示卡驅動程式",
+            "description": "第1階段: 安裝最新顯示卡驅動程式",
+            "tasks": [
+              "研究安裝最新顯示卡驅動程式最佳實踐",
+              "設計安裝最新顯示卡驅動程式實施方案",
+              "實施安裝最新顯示卡驅動程式",
+              "測試安裝最新顯示卡驅動程式效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "安裝最新顯示卡驅動程式實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施更新晶片組驅動程式",
+            "description": "第2階段: 更新晶片組驅動程式",
+            "tasks": [
+              "研究更新晶片組驅動程式最佳實踐",
+              "設計更新晶片組驅動程式實施方案",
+              "實施更新晶片組驅動程式",
+              "測試更新晶片組驅動程式效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "更新晶片組驅動程式實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "系統響應速度提升",
+          "溫度控制在安全範圍"
+        ]
+      },
+      "priority": "high"
+    },
+    "enhance_security": {
+      "definition": {
+        "name": "增強系統安全性",
+        "description": "透過韌體和驅動程式更新增強系統安全性",
+        "metrics": [
+          "安全性漏洞修補",
+          "韌體安全性版本",
+          "驅動程式簽章驗證"
+        ],
+        "strategies": [
+          "安裝安全性更新",
+          "更新有漏洞的驅動程式",
+          "啟用安全啟動"
+        ],
+        "priority": "high",
+        "success_criteria": [
+          "無已知安全性漏洞",
+          "所有驅動程式經過簽章驗證"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "enhance_security",
+          "strategy": "安裝安全性更新",
+          "priority": "medium",
+          "description": "實施安裝安全性更新以達成增強系統安全性目標"
+        },
+        {
+          "goal": "enhance_security",
+          "strategy": "更新有漏洞的驅動程式",
+          "priority": "medium",
+          "description": "實施更新有漏洞的驅動程式以達成增強系統安全性目標"
+        },
+        {
+          "goal": "enhance_security",
+          "strategy": "啟用安全啟動",
+          "priority": "medium",
+          "description": "實施啟用安全啟動以達成增強系統安全性目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "enhance_security",
+        "goal_name": "增強系統安全性",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施安裝安全性更新",
+            "description": "第1階段: 安裝安全性更新",
+            "tasks": [
+              "研究安裝安全性更新最佳實踐",
+              "設計安裝安全性更新實施方案",
+              "實施安裝安全性更新",
+              "測試安裝安全性更新效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "安裝安全性更新實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施更新有漏洞的驅動程式",
+            "description": "第2階段: 更新有漏洞的驅動程式",
+            "tasks": [
+              "研究更新有漏洞的驅動程式最佳實踐",
+              "設計更新有漏洞的驅動程式實施方案",
+              "實施更新有漏洞的驅動程式",
+              "測試更新有漏洞的驅動程式效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "更新有漏洞的驅動程式實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "無已知安全性漏洞",
+          "所有驅動程式經過簽章驗證"
+        ]
+      },
+      "priority": "high"
+    },
+    "wsl2_compatibility": {
+      "definition": {
+        "name": "確保WSL2相容性",
+        "description": "確保硬體更新後WSL2正常運作",
+        "metrics": [
+          "WSL2啟動成功",
+          "Linux核心功能正常",
+          "檔案系統存取正常"
+        ],
+        "strategies": [
+          "更新後測試WSL2功能",
+          "檢查Linux核心版本",
+          "備份WSL2資料"
+        ],
+        "priority": "high",
+        "success_criteria": [
+          "WSL2正常啟動和運作",
+          "所有Linux功能正常",
+          "無資料損失"
+        ]
+      },
+      "relevance_score": 50,
+      "relevance_analysis": [
+        "未發現明顯相關問題，但目標仍然相關"
+      ],
+      "recommendations": [
+        {
+          "goal": "wsl2_compatibility",
+          "strategy": "更新後測試WSL2功能",
+          "priority": "medium",
+          "description": "實施更新後測試WSL2功能以達成確保WSL2相容性目標"
+        },
+        {
+          "goal": "wsl2_compatibility",
+          "strategy": "檢查Linux核心版本",
+          "priority": "medium",
+          "description": "實施檢查Linux核心版本以達成確保WSL2相容性目標"
+        },
+        {
+          "goal": "wsl2_compatibility",
+          "strategy": "備份WSL2資料",
+          "priority": "medium",
+          "description": "實施備份WSL2資料以達成確保WSL2相容性目標"
+        }
+      ],
+      "implementation_plan": {
+        "goal": "wsl2_compatibility",
+        "goal_name": "確保WSL2相容性",
+        "phases": [
+          {
+            "phase_number": 1,
+            "name": "實施更新後測試WSL2功能",
+            "description": "第1階段: 更新後測試WSL2功能",
+            "tasks": [
+              "研究更新後測試WSL2功能最佳實踐",
+              "設計更新後測試WSL2功能實施方案",
+              "實施更新後測試WSL2功能",
+              "測試更新後測試WSL2功能效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "更新後測試WSL2功能實施完成",
+              "相關測試通過"
+            ]
+          },
+          {
+            "phase_number": 2,
+            "name": "實施檢查Linux核心版本",
+            "description": "第2階段: 檢查Linux核心版本",
+            "tasks": [
+              "研究檢查Linux核心版本最佳實踐",
+              "設計檢查Linux核心版本實施方案",
+              "實施檢查Linux核心版本",
+              "測試檢查Linux核心版本效果"
+            ],
+            "duration_weeks": 1,
+            "deliverables": [
+              "檢查Linux核心版本實施完成",
+              "相關測試通過"
+            ]
+          }
+        ],
+        "timeline": {
+          "estimated_total_weeks": 2,
+          "start_date": "2026-01-24"
+        },
+        "success_criteria": [
+          "WSL2正常啟動和運作",
+          "所有Linux功能正常",
+          "無資料損失"
+        ]
+      },
+      "priority": "high"
+    }
+  },
+  "summary": {
+    "total_goals": 4,
+    "high_priority_goals": 4,
+    "average_relevance": 50.0,
+    "recommended_focus": [
+      "更新驅動程式",
+      "優化系統效能",
+      "增強系統安全性"
+    ]
+  }
+}

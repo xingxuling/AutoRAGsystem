@@ -1,0 +1,38 @@
+{
+  "system_info": {
+    "name": "RAG 自動化系統",
+    "version": "1.0.0",
+    "execution_time": "2026-01-26T14:52:06.163542",
+    "execution_id": "20260126_145205"
+  },
+  "project_info": {
+    "path": "test_project",
+    "name": "test_project"
+  },
+  "analysis_results": {
+    "report_path": "/mnt/c/Users/User/auto-rag-system/output/20260126_145205/analysis_report.json",
+    "overall_score": 15.5,
+    "maturity_level": "beginner"
+  },
+  "decision_results": {
+    "report_path": "/mnt/c/Users/User/auto-rag-system/output/20260126_145205/decisions.json",
+    "should_proceed": false,
+    "iteration_theme": "建立堅實基礎"
+  },
+  "packaging_results": {
+    "package_path": null,
+    "report_path": null
+  },
+  "summary": {
+    "status": "stopped",
+    "recommendations": [
+      "項目需要重大改進，建議進行全面重構",
+      "根據分析結果，建議暫停當前迭代，重新評估項目方向"
+    ],
+    "next_steps": [
+      "1. 查看分析報告了解項目問題",
+      "2. 根據決策建議重新規劃項目",
+      "3. 解決關鍵問題後重新運行系統"
+    ]
+  }
+}

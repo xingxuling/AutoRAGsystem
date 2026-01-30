@@ -1,0 +1,107 @@
+# RAG 自動化系統部署配置
+# 生成時間: 2026-01-24 11:16
+
+project:
+  name: "auto-rag-system"
+  description: "RAG 自動化分析與優化系統"
+  type: "python"
+  version: "1.0.0"
+  priority: 1
+  language: "Python 3.9+"
+  
+  entry_points:
+    main: "main.py"
+    enhanced: "main_enhanced.py"
+    app: "rag_app.py"
+    simple: "rag_automation_simple.py"
+    monitoring: "run_monitoring_system.py"
+
+dependencies:
+  python:
+    requirements_file: "requirements.txt"
+    packages:
+      - colorama>=0.4.6
+      - tqdm>=4.66.0
+      - psutil>=5.9.0
+  system:
+    - curl
+    - wget
+    - git
+
+deployment:
+  timestamp: "2026-01-24T11:16:54+08:00"
+  status: "configured"
+  environment: "production"
+  
+  ports:
+    web: 8080
+    monitoring: 9090
+  
+  volumes:
+    - "./output:/app/output"
+    - "./logs:/app/logs"
+    - "./config:/app/config"
+
+docker:
+  enabled: true
+  image_name: "auto-rag-system"
+  base_image: "python:3.9-slim"
+  build_context: "."
+  ports:
+    - "8080:8080"
+  
+  build_commands:
+    - "docker build -t auto-rag-system ."
+    - "docker run -p 8080:8080 -v $(pwd)/output:/app/output auto-rag-system"
+
+monitoring:
+  enabled: true
+  health_check: "/health"
+  metrics_endpoint: "/metrics"
+  log_level: "INFO"
+  
+  checks:
+    - name: "系統健康"
+      endpoint: "/health"
+      interval: 30
+    - name: "性能指標"
+      endpoint: "/metrics"
+      interval: 60
+
+backup:
+  enabled: true
+  directories:
+    - "output"
+    - "config"
+    - "logs"
+  schedule: "daily"
+  retention_days: 7
+
+maintenance:
+  auto_update: true
+  restart_policy: "unless-stopped"
+  log_rotation: "weekly"
+  
+  tasks:
+    - name: "清理舊日誌"
+      command: "find logs -name '*.log' -mtime +7 -delete"
+      schedule: "0 2 * * *"
+    - name: "備份數據"
+      command: "./backup.sh"
+      schedule: "0 3 * * *"
+
+documentation:
+  readme: "README.md"
+  quick_start: "QUICK_START_GUIDE.md"
+  installation: "INSTALLATION_COMPLETE.md"
+  troubleshooting: "INSTALLATION_TROUBLESHOOTING.md"
+  
+  api_docs:
+    - "main.py - 基礎分析 API"
+    - "main_enhanced.py - 增強分析 API"
+    - "rag_app.py - 應用界面 API"
+
+notes: |
+  此配置由 OpenHands 部署系統自動生成。
+  系統已配置完整的 Docker 支持、監控和備份功能。
+  使用 ./start.sh 啟動系統或使用 Docker 部署。
