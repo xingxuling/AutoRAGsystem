@@ -44,22 +44,27 @@ jobs:
       - name: Build debug APK from independent source
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
-      - name: Verify package and launcher
+      - name: Verify independent package and launcher
         run: |
           APK=app/build/outputs/apk/debug/app-debug.apk
           AAPT="$ANDROID_HOME/build-tools/35.0.0/aapt"
           test -f "$APK"
           test -x "$AAPT"
           "$AAPT" dump badging "$APK" | tee apk-badging.txt
-          grep -q "package: name='company.taowind.aethercenter'" apk-badging.txt
-          grep -q "launchable-activity: name='company.taowind.aethercenter.MainActivity'" apk-badging.txt
-          unzip -p "$APK" classes.dex | strings | grep -q 'Lcompany/taowind/aethercenter/MainActivity;'
-          if unzip -p "$APK" classes.dex | strings | grep -q 'company/taowind/aethermobile/bootstrap/MainActivity'; then
+          PACKAGE_LINE=$(grep "^package:" apk-badging.txt)
+          LAUNCHER_LINE=$(grep "^launchable-activity:" apk-badging.txt)
+          echo "$PACKAGE_LINE"
+          echo "$LAUNCHER_LINE"
+          echo "$PACKAGE_LINE" | grep -F "name='company.taowind.aethercenter'"
+          echo "$LAUNCHER_LINE" | grep -F "name='company.taowind.aethercenter.MainActivity'"
+          unzip -p "$APK" classes.dex > classes.dex
+          if grep -aFq 'company/taowind/aethermobile/bootstrap/MainActivity' classes.dex; then
             echo 'Aether Mobile launcher leaked into Runtime Center APK' >&2
             exit 1
           fi
 
-      - name: Upload verified APK
+      - name: Upload APK artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: Aether-Runtime-Center-v0.1.1-independent
