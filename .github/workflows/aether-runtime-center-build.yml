@@ -47,11 +47,14 @@ jobs:
       - name: Verify package and launcher
         run: |
           APK=app/build/outputs/apk/debug/app-debug.apk
+          AAPT="$ANDROID_HOME/build-tools/35.0.0/aapt"
           test -f "$APK"
-          aapt dump badging "$APK" | tee apk-badging.txt
+          test -x "$AAPT"
+          "$AAPT" dump badging "$APK" | tee apk-badging.txt
           grep -q "package: name='company.taowind.aethercenter'" apk-badging.txt
           grep -q "launchable-activity: name='company.taowind.aethercenter.MainActivity'" apk-badging.txt
-          if strings "$APK" | grep -q 'company.taowind.aethermobile.bootstrap.MainActivity'; then
+          unzip -p "$APK" classes.dex | strings | grep -q 'Lcompany/taowind/aethercenter/MainActivity;'
+          if unzip -p "$APK" classes.dex | strings | grep -q 'company/taowind/aethermobile/bootstrap/MainActivity'; then
             echo 'Aether Mobile launcher leaked into Runtime Center APK' >&2
             exit 1
           fi
