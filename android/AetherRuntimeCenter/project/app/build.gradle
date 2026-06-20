@@ -1,0 +1,27 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "company.taowind.aethercenter"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "company.taowind.aethercenter"
+        minSdk 28
+        targetSdk 31
+        versionCode 3
+        versionName "0.1.2"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
