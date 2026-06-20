@@ -31,6 +31,30 @@ public final class MainActivity extends Activity {
     private static final String TERMUX_SERVICE = "com.termux.app.RunCommandService";
     private static final String ENDPOINT = "http://127.0.0.1:8080";
 
+    private static final String START_ONLY = "pkill -f 'llama-server.*127.0.0.1.*8080' 2>/dev/null || true; "
+            + "nohup \"$HOME/llama.cpp/build/bin/llama-server\" "
+            + "-hf Qwen/Qwen3-VL-2B-Instruct-GGUF:Q4_K_M "
+            + "--host 127.0.0.1 --port 8080 -ngl 99 "
+            + "> \"$HOME/aether-runtime.log\" 2>&1 & "
+            + "echo $! > \"$HOME/aether-runtime.pid\"";
+
+    private static final String INSTALL_AND_START = "set -e; "
+            + "pkg update -y; pkg install -y git cmake clang libcurl curl; "
+            + "if [ ! -d \"$HOME/llama.cpp/.git\" ]; then "
+            + "git clone --depth 1 https://github.com/ggml-org/llama.cpp \"$HOME/llama.cpp\"; "
+            + "else git -C \"$HOME/llama.cpp\" pull --ff-only; fi; "
+            + "cmake -S \"$HOME/llama.cpp\" -B \"$HOME/llama.cpp/build\" -DGGML_VULKAN=ON -DLLAMA_CURL=ON; "
+            + "cmake --build \"$HOME/llama.cpp/build\" -j 4 --target llama-server; "
+            + START_ONLY;
+
+    private static final String STOP_ONLY = "if [ -f \"$HOME/aether-runtime.pid\" ]; then "
+            + "kill $(cat \"$HOME/aether-runtime.pid\") 2>/dev/null || true; fi; "
+            + "pkill -f 'llama-server.*127.0.0.1.*8080' 2>/dev/null || true; "
+            + "rm -f \"$HOME/aether-runtime.pid\"";
+
+    private static final String VIEW_LOG = "touch \"$HOME/aether-runtime.log\"; "
+            + "tail -n 200 -f \"$HOME/aether-runtime.log\"";
+
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
 
@@ -198,7 +222,8 @@ public final class MainActivity extends Activity {
 
     private void renderHealth(HealthResult result) {
         statusView.setText(result.title);
-        detailView.setText(result.detail == null || result.detail.isBlank() ? "無附加資訊" : result.detail);
+        String detail = result.detail;
+        detailView.setText(detail == null || detail.trim().isEmpty() ? "無附加資訊" : detail);
         if (result.level == 2) {
             statusView.setTextColor(Color.rgb(24, 133, 79));
         } else if (result.level == 1) {
@@ -264,29 +289,15 @@ public final class MainActivity extends Activity {
         return Math.round(value * getResources().getDisplayMetrics().density);
     }
 
-    private record HealthResult(String title, String detail, int level) {}
+    private static final class HealthResult {
+        final String title;
+        final String detail;
+        final int level;
 
-    private static final String INSTALL_AND_START = "set -e; "
-            + "pkg update -y; pkg install -y git cmake clang libcurl curl; "
-            + "if [ ! -d \"$HOME/llama.cpp/.git\" ]; then "
-            + "git clone --depth 1 https://github.com/ggml-org/llama.cpp \"$HOME/llama.cpp\"; "
-            + "else git -C \"$HOME/llama.cpp\" pull --ff-only; fi; "
-            + "cmake -S \"$HOME/llama.cpp\" -B \"$HOME/llama.cpp/build\" -DGGML_VULKAN=ON -DLLAMA_CURL=ON; "
-            + "cmake --build \"$HOME/llama.cpp/build\" -j 4 --target llama-server; "
-            + START_ONLY;
-
-    private static final String START_ONLY = "pkill -f 'llama-server.*127.0.0.1.*8080' 2>/dev/null || true; "
-            + "nohup \"$HOME/llama.cpp/build/bin/llama-server\" "
-            + "-hf Qwen/Qwen3-VL-2B-Instruct-GGUF:Q4_K_M "
-            + "--host 127.0.0.1 --port 8080 -ngl 99 "
-            + "> \"$HOME/aether-runtime.log\" 2>&1 & "
-            + "echo $! > \"$HOME/aether-runtime.pid\"";
-
-    private static final String STOP_ONLY = "if [ -f \"$HOME/aether-runtime.pid\" ]; then "
-            + "kill $(cat \"$HOME/aether-runtime.pid\") 2>/dev/null || true; fi; "
-            + "pkill -f 'llama-server.*127.0.0.1.*8080' 2>/dev/null || true; "
-            + "rm -f \"$HOME/aether-runtime.pid\"";
-
-    private static final String VIEW_LOG = "touch \"$HOME/aether-runtime.log\"; "
-            + "tail -n 200 -f \"$HOME/aether-runtime.log\"";
+        HealthResult(String title, String detail, int level) {
+            this.title = title;
+            this.detail = detail;
+            this.level = level;
+        }
+    }
 }
